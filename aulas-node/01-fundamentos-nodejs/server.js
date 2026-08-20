@@ -1,17 +1,31 @@
 import http from "http";
 
+
+//cabeçalhos (Requisição/Resposta) => Metadados
+
+const users = []
+
 const server = http.createServer((req, res) => {
   // ROTAS HTTP: método e url da requisição
   const { method, url } = req;
 
   if (method === "GET" && url === "/users") {
-    return res.end("Listagem de usuários");
+    return res
+    .setHeader('Content-type', 'application/json')
+    .end(JSON.stringify(users))
   }
+
   if (method == "POST" && url === "/users") {
+    users.push({
+      id: 1,
+      name: "John Wick",
+      email: "jwmoovies@gmail.com",
+    });
+
     return res.end("Criação de usuários");
   }
 
-  return red.end
+  return res.end("Nemhum dos dois");
 });
 
 server.listen(3333);
@@ -34,3 +48,6 @@ server.listen(3333);
 
 //para atualização automática a cada alteração
 // node --watch aulas-node/01-fundamentos-nodejs/server.js
+
+//statefull - stateless
+// statefull depende de memoria
