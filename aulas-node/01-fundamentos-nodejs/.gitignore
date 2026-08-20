@@ -1,0 +1,8 @@
+node_modules/
+outros/
+/outros
+.env
+.env.*
+dist/
+.DS_Store
+*.log
