@@ -1,4 +1,4 @@
-<h1 align="center">
+﻿<h1 align="center">
   🚀 Fundamentos do Node.js
 </h1>
 
@@ -32,15 +32,17 @@ Este projeto aborda os **fundamentos essenciais do Node.js**, com foco em entend
 ## 🗂️ Estrutura de Pastas
 
 ```text
-01-fundamentos-nodejs/
-├── src/
-│   └── server.js      # Servidor HTTP principal e rotas da aplicação
-├── streams/           # Módulo prático e arquivos de Streams
-│   └── streams.md     # Documentação detalhada sobre Streams
-├── outros/            # Arquivos auxiliares e rascunhos (ignorado no Git)
-├── package.json       # Configuração e scripts do projeto
-├── .gitignore         # Arquivos e pastas ignorados no versionamento
-└── README.md          # Documentação principal do projeto
+GrowUp-Unicap-Rocketseat/
+├── aulas-node/
+│   └── 01-fundamentos-nodejs/
+│       ├── src/
+│       │   └── server.js      # Servidor HTTP principal e rotas da aplicação
+│       ├── streams/           # Módulo prático e arquivos de Streams
+│       │   └── streams.md     # Documentação detalhada sobre Streams
+│       ├── outros/            # Arquivos auxiliares e rascunhos (ignorado no Git)
+│       ├── package.json       # Configuração e scripts do projeto
+│       └── .gitignore         # Arquivos e pastas ignorados no versionamento
+└── README.md                  # Documentação principal na raiz do repositório
 ```
 
 ---
